@@ -1,0 +1,21 @@
+.logo-image{
+display: block;
+margin-left:auto;
+margin-right:auto;
+}
+
+.main{
+  height:100vh;
+  background-image: url(assets/img/background-budget.png);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.login{
+  margin: auto;
+  width: 50%;
+  border: 3px solid black;
+  padding: 10px;
+margin-top: 20%;
+}
