@@ -1,0 +1,12 @@
+
+.profile-picture{
+  border-radius: 50px;
+  max-height: 100px;
+  max-width: 100px;
+  align-content: center;
+}
+.profile-info{
+margin: auto;
+  width: 50%;
+  padding: 10px;
+}

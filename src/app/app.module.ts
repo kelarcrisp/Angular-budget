@@ -6,9 +6,12 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { environment } from '../environments/environment'
 import { AngularFireModule } from '@angular/fire'
-import { AngularFirestoreModule } from 'angularfire2/firestore'
+import { AngularFirestoreModule } from '@angular/fire/firestore'
 //add angularFireStoreAuth here as well
 import { UsersService } from './services/users.service'
+import { AngularFireAuthModule, AngularFireAuth } from '@angular/fire/auth';
+import { AuthService } from '../app/services/auth.service';
+import { BudgetService } from '../app/services/budget.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,9 +22,10 @@ import { UsersService } from './services/users.service'
     BrowserModule,
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebase, 'monthly-Budget'),
-    AngularFirestoreModule
+    AngularFirestoreModule,
+    AngularFireAuthModule
   ],
-  providers: [UsersService],
+  providers: [UsersService, AuthService, BudgetService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

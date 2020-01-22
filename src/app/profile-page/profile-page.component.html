@@ -2,25 +2,20 @@
     <a routerLink='/' routerLinkActive='active'>LoginPage</a>
     <br>
     <a routerLink='/HomePage' routerLinkActive='active'>HomePage</a>
-    <div class="container-fluid">
-        <form>
-            <div class="form-group">
-                <label>First Name</label>
-                <input type="text" class="form-control">
-            </div>
-            <div class="form-group">
-                <label>Last Name</label>
-                <input type="text" class="form-control">
-            </div>
-            <div class="form-group">
-                <label>Email</label>
-                <input type="email" class="form-control">
-            </div>
-            <div class="form-group">
-                <label>Age</label>
-                <input type="text" class="form-control">
-            </div>
-            <button class="btn btn-primary">Submit form</button>
-        </form>
+
+    <div class="container-fluid" *ngFor='let i of myUser'>
+
+        <div class='profile-info'>
+            <img class='profile-picture' src={{i[0].photoURL}}>
+        </div>
+        <div class='profile-info'>
+            Your Email is:
+            {{i[0].email}}
+        </div>
+        <div class='profile-info'>
+            Your DisplayName is:
+            {{i[0].displayName}}
+        </div>
+
     </div>
 </div>

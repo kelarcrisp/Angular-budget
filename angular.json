@@ -90,7 +90,7 @@
             ],
             "styles": [
               "src/styles.css",
-              "../node-modules/font-awesome/css/font-awesome.css"
+              "../node_modules/font-awesome/css/font-awesome.css"
             ],
             "scripts": []
           }

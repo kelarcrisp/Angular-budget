@@ -4,10 +4,16 @@
     <a routerLink='/ProfilePage' routerLinkActive='active'>Profile Page</a>
     <div class="login">
         <p>
-            Login with facebook:
+            Please login with google to get started!:
         </p>
-        <p>
-            Login with google:
-        </p>
+        <div class="formGroup" *ngIf='authService.user$ | async as user; else login'>
+
+            <hr>
+            <button class='button' (click)='authService.signOut()'>Sign out</button>
+        </div>
+
+        <ng-template #login>
+
+            <button class='button' (click)='authService.googleSignIn()'>Login with Google </button>
+        </ng-template>
     </div>
-</div>
