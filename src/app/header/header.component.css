@@ -1,5 +1,17 @@
+.header{
+display:grid;
+grid-template-columns: repeat(2,1fr)
+}
+
 .logo-image{
-    display: block;
-  margin-left: auto;
-  margin-right: auto;
+justify-self: right;
+}
+.links{
+  margin-right: 20px;
+  margin-top: 50px;
+  justify-self: right;
+}
+.links a {
+  padding: 5px;
+  align-items: bottom
 }

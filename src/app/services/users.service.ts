@@ -21,9 +21,7 @@ export class UsersService {
   getUsers() {
     return this.users;
   }
-  getmyUser() {
-    this.myUser = this.fireStore.collection('/users').get()
-  }
+
 }
 
 

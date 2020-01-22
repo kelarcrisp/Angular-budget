@@ -11,17 +11,17 @@ import { SafeResourceUrl } from '@angular/platform-browser';
 export class ProfilePageComponent implements OnInit {
 
   public Users: User[];
-  public myUser = [];
+
   public photo: SafeResourceUrl;
   constructor(private usersService: UsersService, private authService: AuthService) { }
 
   ngOnInit() {
     this.usersService.getUsers().subscribe(users => {
       this.Users = users;
-      console.log(`this is my user!!! ${this.Users[0].email}`)
+
+      console.log(users)
 
     })
   }
-
 
 }
