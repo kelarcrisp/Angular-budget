@@ -12,7 +12,7 @@ import { AngularFireModule } from '@angular/fire';
 })
 
 export class AuthService {
-
+  // I have to show each of these properties in the component itself to fix the errors in the console
   user$: Observable<User>;
 
   constructor(

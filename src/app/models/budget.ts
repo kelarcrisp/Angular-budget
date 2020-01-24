@@ -1,6 +1,7 @@
 export interface Budget {
-    id?: string
-    budget?: number,
-    budgetLeft?: number,
-    item?: string
+    id?: string;
+    budget?: number;
+    budgetLeft?: number;
+    item?: string;
+    price?: number;
 }

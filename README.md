@@ -2,17 +2,17 @@
 
 
   * [Component's](#block-elements)
+    * Header
     * Login-Page
     * Home-Page
     * Profile-Page
   ___
-  
   * [login-Page]
-    * Header-Logo
+    * Header
     * input-fields
     * Footer
   * [Home-Page]
-    * Header-Logo
+    * Header
     * Body
     * Footer
   * [Profile-Page]

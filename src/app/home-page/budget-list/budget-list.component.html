@@ -1,0 +1,15 @@
+<table class="table table-hover">
+    <thead>
+        <th>Budget</th>
+        <th>Item</th>
+        <th>Price</th>
+    </thead>
+    <tbody>
+        <tr *ngFor='let user of users'>
+            <td (click)='onPut(user)'>${{user.budget}}</td>
+            <td (click)='onPut(user)'>{{user.item}}</td>
+            <td (click)='onPut(user)'>${{user.price}}</td>
+            <td><a class="btn-text danger" (click)='onDelete(user.id)'><i class="fa fa-trash"></i></a></td>
+        </tr>
+    </tbody>
+</table>

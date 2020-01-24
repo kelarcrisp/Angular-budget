@@ -1,9 +1,11 @@
 <div class='header'>
 
     <div class="logo-image">
+
         <img src="assets/img/budget-logo.png">
     </div>
     <div class='links'>
+        <button class='signOut' (click)='auth.signOut()'>Sign out</button>
         <a routerLink='/' routerLinkActive='active'>LoginPage</a>
         <a routerLink='/HomePage' routerLinkActive='active'>HomePage</a>
         <a routerLink='/ProfilePage' routerLinkActive='active'>ProfilePage</a>
