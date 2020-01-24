@@ -39,7 +39,7 @@ export class BudgetFormComponent implements OnInit {
     else
       this.fireStore.doc(`budget/${form.value.id}`).update(data)
     this.resetForm(form);
-    this.toastr.show('Your item has been added succesfully')
+    this.toastr.show('Your item has been added succesfully!')
   }
 
 }
